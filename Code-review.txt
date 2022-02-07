@@ -1,0 +1,28 @@
+Following are code review comments for App.js
+
+General comments
+-------------------------
+
+1. Best to use functional components going forward as they are much more concise and have more readable code.
+2. Use styled components for styling of elements
+3. Use PropTypes and default props for components 
+
+Comments for App.js
+--------------------------
+
+Line 3 - All CCS should be in an external .css file
+Line 4 - Best to use rem unit instead of px
+Line 7 - CarsFuuel is misspelled, Should be CarsFuel for lack of a better name for the component
+Line 8 - User facing tet and labels should go in a translations file so we can implement localization in the future.
+Line 8 - props.children should be sanitised before using to avoid unwanted effects
+Line 13 - Instead of uisnng 0 & 1 for state, use an Enum or at least readable constants. In this case, it makes more sense to have sate as a boolean rather than a number.
+Line 16 - Avoid using constants usch as 1200. Best to use a value provided via props. e.g. fuelThreshold = 1200
+Line 19 - useEffect is missing a dpeendencies array.
+Line 21 - Use ternary operator. e.g. condition ? true : false
+Line22 - Avoid using inline css if possible
+Line 33 - { x: 1, f: 0 } - Use readable variable names instead of x and f
+Line 37 - Set time out will keep going for ever. We need logic to stop the timer
+Line 39 - Extract the logic for fuel calculation in a separate function and provide comments around the logic
+Line 45 - Use the lifecycle method componentWillUnmount to provide cleanup code for the timer
+Lines 50 and 51 - No need to create these variables. Also use let and const instead of var
+

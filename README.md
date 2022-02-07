@@ -16,3 +16,7 @@ The helper.js file contains all the code for this task.
 To execute the code, naviagte to the folder containing the helper.js file and run the command `node helper.js`
 By default, the `getOutput` function uses the `successResponses` mock data.
 You can also pass mock responses `errorResponses1`, `errorResponses2`, `errorResponses3` declared at the top of the file.
+
+# Task 5 - Code review
+
+The code review comments for App.js can be found in `Code-review.txt`
